@@ -59,7 +59,6 @@ for (sport of sports) {
 
 ---
 
-
 #### 使用 [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) 從迴圈中臨陣脫逃
 
 ```javascript
@@ -80,17 +79,27 @@ for (sport of sports) {
 }
 ```
 
---- 
+---
+
 #### 小測驗時間
 #### 找出 numbers 裡面最大及最小的數字
 ```javascript
-
-let numbers = [97, 1, 50, 90, 100, -5, -20 ,9];
+let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
 for (number of numbers) {
   // ...
 }
-
-
 ```
---- 
+
+---
+
+#### 小測驗時間
+#### 找出 numbers 有幾個負數，幾個正數
+```javascript
+let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
+
+for (number of numbers) {
+  // ...
+}
+```
+---
