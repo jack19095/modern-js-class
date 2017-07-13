@@ -93,7 +93,7 @@ let sports2 = ['swimming', 'archery', 'cycling'];
 let sportSet = [sports1, sports2];
 
 console.log(sportSet[0][2]); // ?
-Ï
+
 ```
 ---
 

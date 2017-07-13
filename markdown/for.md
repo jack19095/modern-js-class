@@ -51,7 +51,7 @@ for ( 參數 of 陣列) {
 ```javascript
 
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
-for (sport of sports) {
+for (let sport of sports) {
    console.log(sport);
    // more statements
 }
@@ -102,4 +102,31 @@ for (number of numbers) {
   // ...
 }
 ```
+
+---
+
+#### 小測驗時間
+#### 將陣列翻轉
+```javascript
+let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
+
+for (number of numbers) {
+  // ...
+}
+console.log(numbers);
+```
+
+---
+
+#### 小測驗時間
+#### 將陣列翻轉，不用額外的變數
+```javascript
+let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
+
+for (number of numbers) {
+  // ...
+}
+console.log(numbers);
+```
+
 ---
