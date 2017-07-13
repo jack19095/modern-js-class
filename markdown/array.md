@@ -23,7 +23,7 @@ let score2 = 40;
 let scores = [score0, score1, score2];
 
 console.log(scores);    // 把整個陣列印出來
-console.log(score[0]);  // 只印出第 0 個
+console.log(scores[0]);  // 只印出第 0 個
 
 ```
 
@@ -46,11 +46,11 @@ console.log(total);  // 4
 ---
 
 
-#### .sliced
+#### .slice
 
 ```javascript
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
-let sliced = sports.sliced(1, 3);
+let sliced = sports.slice(1, 3);
 
 console.log(sports);  // ['soccer', 'baseball', 'football', 'swimming']
 console.log(sliced);  // ['baseball', 'football']
