@@ -56,7 +56,9 @@ console.log(sports);  // ['soccer', 'baseball', 'football', 'swimming']
 console.log(sliced);  // ['baseball', 'football']
 ```
 
+
 ---
+
 
 #### .shift / .pop
 
@@ -70,13 +72,17 @@ sports.shift();
 console.log(sliced);  // ['baseball', 'football']
 ```
 
---- 
+
+---
+
 
 #### 還有很多方法（method）可以使用
 #### 可以到這裡查詢 [Reference Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
---- 
+---
+
+
 #### 小測驗時間
 
 ```javascript
@@ -89,4 +95,5 @@ let sportSet = [sports1, sports2];
 console.log(sportSet[0][2]); // ?
 Ï
 ```
---- 
+---
+
