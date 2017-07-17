@@ -123,7 +123,7 @@ console.log(numbers);
 ```javascript
 let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
-for (number of numbers) {
+for (let i = 0 ; i < numbers.length; i++) {
   // ...
 }
 console.log(numbers);
