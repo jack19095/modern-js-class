@@ -41,7 +41,7 @@ const name = (param1, param2) => {
 
 ---
 
-#### 定義函式，使用函式
+#### 定義、使用函式1
 #### .() 是呼叫的意思，如果沒有呼叫就是一個函式物件
 
 ```javascript
@@ -60,33 +60,32 @@ console.log(max);
 
 ---
 
-#### 定義函式，使用函式2
-
+#### 定義、使用函式2
+#### 使用 Array 內建的方法 [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 ```javascript
-const printNumber = (number) => {
-  console.log(number);
+const print = (item, index, array) => {
+  console.log(item, index, array)
 }
 
-let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
-
-numbers.forEach(printNumber);
+let numbers = ['a', 'b', 'c', 'd']
+numbers.forEach(print)
 ```
 
 ---
 
-#### 定義函式，使用函式3
+#### 定義、使用函式3
 
 ```javascript
-let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
+let numbers = ['a', 'b', 'c', 'd']
 
-numbers.forEach((number) => {
-  console.log(number);
-});
+numbers.forEach((item, index, array) => {
+  console.log(item, index, array)
+})
 ```
 
 ---
 
-#### 定義函式，使用函式4
+#### 定義、使用函式4
 
 ```javascript
 let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
