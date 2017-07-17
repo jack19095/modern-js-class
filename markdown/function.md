@@ -71,6 +71,7 @@ let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
 numbers.forEach(printNumber);
 ```
+
 ---
 
 #### 定義函式，使用函式3
@@ -82,6 +83,7 @@ numbers.forEach((number) => {
   console.log(number);
 });
 ```
+
 ---
 
 #### 定義函式，使用函式4
@@ -101,3 +103,33 @@ console.log(reversed);
 ---
 
 #### 小測驗1.
+#### 算個 BMI
+
+```javascript
+const bmi = (h, w) => {
+  // 
+}
+
+let h = 1.7
+let w = 60
+
+let result = bmi(h, w)
+console.log(result)
+
+```
+
+---
+
+#### 小測驗2.
+#### 算個大家的 BMI
+
+```javascript
+const bmi = (h, w) => {
+  // 
+}
+
+let h = [1.7, 2, 1.6, 1.5]
+let w = [60, 100, 60, 45]
+
+
+```
