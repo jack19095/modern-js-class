@@ -58,41 +58,57 @@ console.log(people)
 ---
 
 
-#### 變數可以做四則運算
-#### 變數可以重新給值
+#### 符合 JSON 格式的字串
+#### 與
+#### JSON 表示法產稱的物件
 
 ```javascript
-let number1 = 5;
-let number2 = 10;
-number1 = number2 * 2;
-number2 = number1 * number1;
-console.log(number1, number2); 
-// 也可以一起印，順便猜猜這兩個值是多少？
+let peopleStr = '{"name":"王小明","age":19}'
+let people = {
+  name: '王小明',
+  age: 19
+}
+console.log(peopleStr)
+console.log(people)
 ```
 
 ---
 
-
-#### 小測驗，要如何交換兩個變數內的值？
+#### 字串轉成 JSON 物件
 
 ```javascript
-let lastName = '冠宏';
-let firstName = '郭';
-
-// ...
-
-console.log(lastName, firstName);
+let peopleStr = '{"name":"王小明","age":19}'
+let people = JSON.parse(peopleStr)
+console.log(people)
 ```
 
 ---
 
-#### 小測驗，你如果只能使用一個變數，要怎麼印出 2^32
-#### （註：不能使用超過 30 行）
+#### JSON 物件轉成字串
 
 ```javascript
-let number = 2;
+let people = {
+  name: '王小明',
+  age: 19
+}
+let peopleStr = JSON.stringify(people)
+console.log(peopleStr)
+```
 
-// ...
+#### 小測驗1.
+#### 將程式碼載入這個 [json](https://gist.github.com/godgunman/2429896ceceaf876157ec1cd44ab150b)
+```javascript
+let data = { /* ... */ }
 
-console.log(number);
+let getInfo = () =>{
+
+}
+
+console.log(getInfo(data))
+
+/* 
+"lat" : 37.4224764, 
+"lng" : -122.0842499 
+"formatted_address" 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+*/
 ```
