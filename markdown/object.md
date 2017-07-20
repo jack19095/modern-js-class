@@ -95,6 +95,8 @@ let peopleStr = JSON.stringify(people)
 console.log(peopleStr)
 ```
 
+---
+
 #### 小測驗1.
 #### 將程式碼載入這個 [json](https://gist.github.com/godgunman/2429896ceceaf876157ec1cd44ab150b)
 ```javascript
