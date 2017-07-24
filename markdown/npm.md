@@ -14,14 +14,46 @@ node_modules/
 
 ---
 
-## 使用 Request
+#### 使用 Request
 
 ```javascript
 const request = require('request');
-request('http://www.google.com', function (error, response, body) {
-  console.log('error:', error); // Print the error if one occurred
-  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-  console.log('body:', body); // Print the HTML for the Google homepage.
+request('http://www.google.com', 
+    function (error, response, body) {
+  console.log('error:', error);
+  console.log('statusCode:', response.statusCode);
+  console.log('body:', body);
 });
 ```
 
+---
+
+#### 透過 Request 使用 Geocoding API
+
+```javascript
+const request = require('request');
+let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
+request(url, 
+    function (error, response, body) {
+  console.log('error:', error);
+  console.log('statusCode:', response.statusCode);
+  console.log('body:', body);
+});
+```
+
+---
+
+#### 結合 getInfo()
+
+```javascript
+const request = require('request');
+const {getInfo} = require('./ex-object')
+
+let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
+request(url, 
+    function (error, response, body) {
+  console.log('error:', error);
+  console.log('statusCode:', response.statusCode);
+  console.log('body:', body);
+});
+```
