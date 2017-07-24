@@ -98,7 +98,7 @@ console.log(peopleStr)
 ---
 
 #### 小測驗1.
-#### 將程式碼載入這個 [json](https://gist.github.com/godgunman/2429896ceceaf876157ec1cd44ab150b)
+#### 下載這個[程式碼](../exercises/ex-object.js)
 ```javascript
 let data = { /* ... */ }
 
@@ -108,9 +108,10 @@ let getInfo = () =>{
 
 console.log(getInfo(data))
 
-/* 
-"lat" : 37.4224764, 
-"lng" : -122.0842499 
-"formatted_address" 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+/*
+請處理 data 取出 lat, lng, formatted_address 等資料，輸出格式如下：｀
+{ lat: 37.4224764,
+  lng: -122.0842499,
+  formatted_address: '1600 Amphitheatre Parkway, Mountain View, CA 94043, USA' }
 */
 ```
