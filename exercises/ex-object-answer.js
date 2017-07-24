@@ -65,7 +65,6 @@ let data = {
 }
 
 let getInfo = (data) => {
-  /* 修改此段程式碼 */
   let formatted_address =
     data.results[0]['formatted_address']
   
