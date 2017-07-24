@@ -98,7 +98,7 @@ console.log(peopleStr)
 ---
 
 #### 小測驗1.
-#### 下載這個[程式碼](../exercises/ex-object.js)
+#### 下載這個[程式碼](https://github.com/ntu-csie-train/modern-js-class/blob/master/exercises/ex-object.js)
 ```javascript
 let data = { /* ... */ }
 
