@@ -1,7 +1,7 @@
 # Modern Javascript (ES6) 與 React.js 課程網
 這是在[台大資訊系統訓練班](http://train.csie.ntu.edu.tw/train/) 開設課程的課程網，課程資訊都在此。
- * 投影片連結：[https://godgunman.github.io/modern-js-class/](https://godgunman.github.io/modern-js-class/)
- * 投影片縮網址：[http://bit.ly/csie-train-js-class](http://bit.ly/csie-train-js-class)
+ * 投影片連結：[https://ntu-csie-train.github.io/modern-js-class/](https://ntu-csie-train.github.io/modern-js-class/)
+ * 投影片縮網址：[http://bit.ly/csie-train-js](http://bit.ly/csie-train-js)
  * 課堂範例連結：[examples](https://github.com/godgunman/modern-js-class/tree/master/examples)
 
 ## 課程資訊
