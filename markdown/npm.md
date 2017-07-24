@@ -3,6 +3,7 @@
 #### 以下為安裝 request 套件
 
 ```bash
+$ npm init
 $ npm install request
 ```
  
@@ -32,6 +33,7 @@ request('http://www.google.com',
 
 ```javascript
 const request = require('request');
+let address = 'National Taiwan University'
 let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
 request(url, 
     function (error, response, body) {
@@ -47,13 +49,11 @@ request(url,
 
 ```javascript
 const request = require('request');
-const {getInfo} = require('./ex-object')
+const { getInfo } = require('./ex-object')
 
+let address = 'National Taiwan University'
 let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
-request(url, 
-    function (error, response, body) {
-  console.log('error:', error);
-  console.log('statusCode:', response.statusCode);
-  console.log('body:', body);
+request(url, function (error, response, body) {
+  console.log(getInfo(body));
 });
 ```
