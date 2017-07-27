@@ -18,7 +18,7 @@ console.log(3)
 #### 當你需要呼叫兩個異步函式的時候
 
 ```javascript
-let imageUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
+let addressUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
 
 let placeAPI = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE'
 
@@ -38,7 +38,7 @@ request(placeAPI, function (error, response, body) {
 #### 可以巢狀的方式使用 callback 
 
 ```javascript
-let imageUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
+let addressUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
 
 let placeAPI = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE'
 
