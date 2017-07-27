@@ -1,5 +1,5 @@
 ## 使用 Promise 
-#### 使用 Promise 可以把巢狀的 callback消掉
+#### 使用 Promise 可以把巢狀的 callback 消掉
 
 ```javascript
 const promise = new Promise(function (resolve, reject) {
@@ -43,6 +43,23 @@ hello2((result) => {
 // 會在兩秒後才會執行 hello2
 ```
 
+---
+
+#### 把 hello2 用 promise 實作
+#### 並用 .then 呼叫
+```javascript
+const hello2 = () => {
+  return new Promise(function (resolve, reject){
+    setTimeout(() => {
+      resolve('hello2')
+    }, 2000)
+  })
+}
+
+hello2.then(function(result){
+  console.log(result)
+})
+```
 
 ---
 
@@ -102,3 +119,8 @@ get2(number)
     console.log(result)
   })
 ```
+
+---
+
+#### 小測驗
+#### 改寫 get2, get5, get7 用 promise 實作
