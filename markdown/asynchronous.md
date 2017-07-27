@@ -18,14 +18,35 @@ console.log(3)
 #### 當你需要呼叫兩個異步函式的時候
 
 ```javascript
-// https://developers.google.com/maps/documentation/static-maps/intro
+let imageUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
 
-let imageUrl = 'https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=13&size=600x300'
+let placeAPI = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE'
 
-const request = require('request');
-request(imageUrl, 
-    function (error, response, body) {
+request(addressUrl, function (error, response, body) {
+  console.log(body)
+})
+
+request(placeAPI, function (error, response, body) {
+  console.log(body)
 })
 
 ```
 
+---
+
+#### 當你需要呼叫兩個異步函式的時候
+#### 可以巢狀的方式使用 callback 
+
+```javascript
+let imageUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=Taipei'
+
+let placeAPI = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE'
+
+request(addressUrl, function (error, response, body) {
+  console.log(body)
+  request(placeAPI, function (error, response, body) {
+    console.log(body)
+  })
+})
+
+```
