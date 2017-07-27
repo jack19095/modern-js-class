@@ -7,7 +7,7 @@ const get2 = (number, done) => {
 const get2p = (number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      res(number * number)
+      resolve(number * number)
     }, 2000)
   });
 }
