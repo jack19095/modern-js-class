@@ -1,7 +1,11 @@
 const get2p = (number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(number * number)
+      if (number > 10) {
+        reject('number > 10')
+      } else {
+        resolve(number * number)
+      }
     }, 2000)
   });
 }
@@ -21,8 +25,16 @@ const get7p = (number) => {
 }
 
 const run = async (number) => {
-  let result = await get2p(number)
-  console.log(result)
+  let result1 = await get2p(number).catch(
+    (error) => {
+      console.log(error)
+    })
+
+  try {
+    let result2 = await get2p(number)
+  } catch (error) {
+    console.log(error)
+  }
 }
 
-run(5);
+run(50);
