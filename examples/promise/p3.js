@@ -22,7 +22,7 @@ const get5p = (number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(number * number * number * number * number)
-    }, 2000)
+    }, 5000)
   });
 }
 
@@ -36,7 +36,7 @@ const get7p = (number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(number * number * 0.7)
-    }, 2000)
+    }, 7000)
   });
 }
 
