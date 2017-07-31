@@ -9,10 +9,13 @@ app.get('/hello', function (req, res) {
 })
 app.post('/hi', function (req, res) {
   let query = req.query
-  res.send('hi routing from post. query='+ query)
+  res.send('hi routing from post. query=' +
+    JSON.stringify(query))
 })
 app.get('/hi', function (req, res) {
-  res.send('hi routing from get')
+  let query = req.query
+  res.send('hi routing from get. query=' +
+    JSON.stringify(query))
 })
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
