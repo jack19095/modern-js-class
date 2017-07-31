@@ -39,6 +39,7 @@ app.post('/hi', function (req, res) {
 #### 使用 request 與自己的 Server 互動
 
 ```javascript
+const request = require('request')
 request('http://localhost:3000/hello', 
   function (error, response, body){
     console.log(body)
@@ -54,6 +55,11 @@ request({
     console.log(body)
 })
 ```
+
+---
+
+#### [url的參數](https://nodejs.org/docs/latest/api/url.html#url_url_strings_and_url_objects)
+
 
 ---
 
@@ -76,6 +82,22 @@ request({
   function (error, response, body){
     console.log(body)
 })
+```
+
+---
+
+#### 新增 body-parser
+
+```javascript
+const express = require('express')
+const bodyParser = require('body-parser')
+
+const app = express()
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 ```
 
 ---

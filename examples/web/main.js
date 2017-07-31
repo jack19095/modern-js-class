@@ -1,0 +1,20 @@
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+app.get('/hello', function (req, res) {
+  res.send('hello routing')
+})
+app.post('/hi', function (req, res) {
+  let query = req.query
+  res.send('hi routing from post. query='+ query)
+})
+app.get('/hi', function (req, res) {
+  res.send('hi routing from get')
+})
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+// http://localhost:3000/
