@@ -24,7 +24,7 @@ app.post('/hi', function (req, res) {
 app.get('/prod/:id', function (req, res) {
   let query = req.query
   let id = req.params.id;
-  res.send('hi routing from get.' + 
+  res.send('prod routing from get.' + 
     `query = ${JSON.stringify(query)}` + 
     `id = ${id}`)
 })
