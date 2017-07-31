@@ -1,5 +1,11 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
@@ -9,14 +15,20 @@ app.get('/hello', function (req, res) {
 })
 app.post('/hi', function (req, res) {
   let query = req.query
+  let body = req.body
   res.send('hi routing from post. query=' +
-    JSON.stringify(query))
+    JSON.stringify(query) +
+    JSON.stringify(body));
 })
-app.get('/hi', function (req, res) {
+
+app.get('/prod/:id', function (req, res) {
   let query = req.query
-  res.send('hi routing from get. query=' +
-    JSON.stringify(query))
+  let id = req.params.id;
+  res.send('hi routing from get.' + 
+    `query = ${JSON.stringify(query)}` + 
+    `id = ${id}`)
 })
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
