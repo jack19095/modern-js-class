@@ -38,3 +38,10 @@ const run = async (number) => {
 }
 
 run(50);
+
+const run2 = async (number) => {
+  let result = await get2p(number)
+  return result
+}
+
+console.log(run2(5))
