@@ -24,10 +24,16 @@ app.post('/hi', function (req, res) {
 app.get('/prod/:id', function (req, res) {
   let query = req.query
   let id = req.params.id;
-  res.send('prod routing from get.' + 
-    `query = ${JSON.stringify(query)}` + 
+  res.send('prod routing from get.' +
+    `query = ${JSON.stringify(query)}` +
     `id = ${id}`)
 })
+
+app.get('/search-place', function (req, res) {
+  let place = req.query.place;
+  res.send(place);
+});
+// http://localhost:3000/search-place?place=ntu
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
