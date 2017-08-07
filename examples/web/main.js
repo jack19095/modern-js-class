@@ -67,7 +67,14 @@ app.get('/search-nearby', function (req, res) {
 // http://localhost:3000/search-nearby?lat=25.0339639&lng=121.5644722
 
 app.get('/home', function (req, res) {
-  res.render('home')
+  let top = req.query.top;
+  res.render('home', {
+    top: top,
+    title: 'Cover your page.',
+    subTitle: 'Cover is a one-page template' +
+      'for building simple and beautiful ' +
+      'home pages.'
+  })
 })
 
 app.listen(3000, function () {
