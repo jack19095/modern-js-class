@@ -77,6 +77,8 @@ app.get('/home', function (req, res) {
   })
 })
 
+// http://localhost:3000/home?top=newbrand
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
