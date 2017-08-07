@@ -44,6 +44,18 @@ app.get('/search-place', function (req, res) {
 });
 // http://localhost:3000/search-place?place=ntu
 
+app.get('/search-nearby', function (req, res) {
+  let lat = req.query.lat
+  let lng = req.query.lng
+  let placeAPI = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE`
+
+  request(placeAPI,
+    function (error, response, body) {
+      res.send(body)
+    })
+})
+// http://localhost:3000/search-nearby?lat=25.0339639&lng=121.5644722
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
