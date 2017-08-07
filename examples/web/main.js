@@ -1,4 +1,7 @@
 const express = require('express')
+const request = require('request')
+const { getInfo } = require('./ex-object')
+
 const app = express()
 const bodyParser = require('body-parser')
 // parse application/x-www-form-urlencoded
@@ -31,7 +34,13 @@ app.get('/prod/:id', function (req, res) {
 
 app.get('/search-place', function (req, res) {
   let place = req.query.place;
-  res.send(place);
+
+  let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${place}`
+  request(url,
+    function (error, response, body) {
+      let result = getInfo(JSON.parse(body))
+      res.send(result);
+    });
 });
 // http://localhost:3000/search-place?place=ntu
 
