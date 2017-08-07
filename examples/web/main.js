@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+app.set('view engine', 'ejs')
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
@@ -47,14 +49,26 @@ app.get('/search-place', function (req, res) {
 app.get('/search-nearby', function (req, res) {
   let lat = req.query.lat
   let lng = req.query.lng
-  let placeAPI = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=500&type=restaurant&key=AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE`
+  let placeAPI = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 
-  request(placeAPI,
+  request({
+    url: placeAPI,
+    qs: {
+      location: `${lat},${lng}`,
+      radius: '500',
+      type: 'restaurant',
+      key: 'AIzaSyBImOy7k7q3nRG0YOcN2Z4GfQDu3q7WYNE'
+    },
+  },
     function (error, response, body) {
       res.send(body)
     })
 })
 // http://localhost:3000/search-nearby?lat=25.0339639&lng=121.5644722
+
+app.get('/home', function (req, res) {
+  res.render('home')
+})
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
