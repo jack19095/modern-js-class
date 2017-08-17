@@ -37,3 +37,14 @@ app.js 是前端程式碼的進入點，並會使用到其他的套件，如自�
 透過 `npm install` 安裝的套件。會被編譯出一個叫做 `bundle.js` 的檔案
 ，之後再透過某 html 檔案載入這個 .js 檔案即可。
 ```
+
+---
+
+#### 執行 webpack
+```
+webpack --config webpack.config.js
+```
+
+```
+node node_modules/webpack/bin/webpack.js --config webpack.config.js
+```
