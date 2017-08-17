@@ -49,3 +49,60 @@ class Hello extends React.Component {
 ## 實作
  * 請至這個[連結](https://github.com/ntu-csie-train/place-spot/tree/starter)下載專案
  * 按下右邊有一個 `download` 的按鈕
+
+
+---
+
+
+## [this.state](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+```javascript
+// Wrong
+this.state.comment = 'Hello';
+```
+
+```javascript
+// Correct
+this.setState({comment: 'Hello'});
+```
+
+---
+
+## [this.props](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
+
+```javascript
+class Hello extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
+}
+
+// 將 hello 元件載入 root element 裡頭
+ReactDOM.render(
+  <Hello name="ggm" />,
+  document.getElementById('root')
+)
+```
+
+---
+
+## [this.refs](https://facebook.github.io/react/docs/refs-and-the-dom.html)
+```
+使用 `ref` callback 來儲存參照值
+```
+
+```javascript
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          ref={(input) => { this.textInput = input; }} />
+        <input
+          type="button"
+          value="Focus the text input"
+          onClick={this.focus}
+        />
+      </div>
+    );
+  }
+```
