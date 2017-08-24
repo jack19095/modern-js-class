@@ -69,7 +69,7 @@ sports.pop();
 console.log(sports);  // ['soccer', 'baseball', 'football']
 
 sports.shift();
-console.log(sliced);  // ['baseball', 'football']
+console.log(sports);  // ['baseball', 'football']
 ```
 
 

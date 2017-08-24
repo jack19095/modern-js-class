@@ -130,3 +130,15 @@ console.log(numbers);
 ```
 
 ---
+
+#### 小測驗時間
+#### 判斷 X 是不是質數
+```javascript
+let x = 327419;
+
+for (let i = 0 ; i < x; i++) {
+  // ...
+}
+```
+
+
