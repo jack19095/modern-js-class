@@ -43,7 +43,7 @@ for ( /* 初始化指令 */ ; /* 判斷式 */; /* 每次程式結束後指令 */
 #### 配合陣列使用
 
 ```javascript
-for ( 參數 of 陣列) {
+for (let 參數 of 陣列) {
    // 執行的程式碼
 }
 ```
@@ -64,7 +64,7 @@ for (let sport of sports) {
 ```javascript
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
 for (let i = 0 ; i < sports.length; i++) {
-  if (sport[i] === 'baseball') {
+  if (sports[i] === 'baseball') {
     break;
   }
 }
@@ -72,7 +72,7 @@ for (let i = 0 ; i < sports.length; i++) {
 
 ```javascript
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
-for (sport of sports) {
+for (let sport of sports) {
   if (sport === 'baseball') {
     break;
   }
@@ -86,7 +86,7 @@ for (sport of sports) {
 ```javascript
 let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
-for (number of numbers) {
+for (let number of numbers) {
   // ...
 }
 ```
@@ -98,7 +98,7 @@ for (number of numbers) {
 ```javascript
 let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
-for (number of numbers) {
+for (let number of numbers) {
   // ...
 }
 ```
@@ -110,9 +110,14 @@ for (number of numbers) {
 ```javascript
 let numbers = [97, 1, 50, 90, 100, -5, -20 ,9, 0];
 
-for (number of numbers) {
+for (let number of numbers) {
   // ...
 }
+
+for (let i = 0 ; i < numbers.length; i++) {
+  // ...
+}
+
 console.log(numbers);
 ```
 
@@ -132,7 +137,7 @@ console.log(numbers);
 ---
 
 #### 小測驗時間
-#### 判斷 X 是不是質數
+#### 判斷 X 是不是質數，使用 % 可以取於數
 ```javascript
 let x = 327419;
 
@@ -140,5 +145,3 @@ for (let i = 0 ; i < x; i++) {
   // ...
 }
 ```
-
-
