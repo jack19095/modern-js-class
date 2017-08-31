@@ -33,7 +33,7 @@ const pow2 = number => (number*number)
 ---
 
 #### 定義、使用函式1
-#### .() 是呼叫的意思，如果沒有呼叫就是一個函式物件
+#### () 是呼叫的意思，如果沒有呼叫就是一個函式物件
 
 ```javascript
 const max = (number1, number2) => {
