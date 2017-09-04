@@ -2,15 +2,21 @@
 #### 使用 Promise 可以把巢狀的 callback 消掉
 
 ```javascript
-const promise = new Promise(function (resolve, reject) {
-  if (ok) {
-    resolve(value)
-  } else {
-    reject(error)
-  }
-})
+const request = require('request');
 
-promise.then(function (value) {
+let promise = new Promise((resolve, reject) => {
+  let url = 'http://google.com'
+  request(url, function (error, response, body) {
+    if (error) {
+      reject(error);
+    } else {
+      resolve(body)
+    }
+  })
+})
+```
+```javascript
+promise.then(function (result) {
 
 }, function (error) {
 
@@ -19,108 +25,52 @@ promise.then(function (value) {
 
 ---
 
-#### 內建 setTimeout 函式
-#### 他就是個異步函式，等等拿這個當範例
+#### 實作情境 2.
+#### 想要讓兩個 request 有前後順序
 ```javascript
-const hello = () => {
-  console.log('hello');
-}
-
-setTimeout(hello, 2000)
-// 會在兩秒後才會印出 hello
-```
-
-```javascript
-const hello2 = (done) =>{
-  setTimeout(() => {
-    done('hello2')
-  }, 2000)
-}
-
-hello2((result) => {
-  console.log(result)
-})
-// 會在兩秒後才會執行 hello2
-```
-
----
-
-#### 把 hello2 用 promise 實作
-#### 並用 .then 呼叫
-```javascript
-const hello2 = () => {
-  return new Promise(function (resolve, reject){
-    setTimeout(() => {
-      resolve('hello2')
-    }, 2000)
+let addressPromise = new Promise((resolve, reject) => {
+  request(addressUrl, function (error, response, body) {
+    if (error) {
+      reject(error);
+    } else {
+      resolve('address done')
+    }
   })
-}
-
-hello2.then(function(result){
-  console.log(result)
+})
+```
+```javascript
+let placePromise = new Promise((resolve, reject) => {
+  request(placeAPI, function (error, response, body) {
+    if (error) {
+      reject(error)
+    } else {
+      resolve('place done')
+    }
+  })
 })
 ```
 
 ---
 
-#### 現在有很多很惱人異步函式
-
 ```javascript
-const get2 = (number, done) =>{
-  setTimeout(() => {
-    done(number * number)
-  }, 2000)
-}
-
-const get5 = (number, done) =>{
-  setTimeout(() => {
-    done(number * number * number * number * number)
-  }, 5000)
-}
-```
-
-```javascript
-const get7 = (number, done) =>{
-  setTimeout(() => {
-    done(number * number * 0.7)
-  }, 7000)
-}
-```
-
----
-
-#### 依序取得數字使用巢狀的 callback
-```javascript
-
-let number = 5;
-get2(number, (result1) => {
-  get5(result1, (result2) => {
-    get7(result2, (result3) => {
-      console.log(number3)
-    })
+addressPromise
+  .then((result) => {
+    console.log(result);
+    return placePromise;
   })
-})
-
-```
-
----
-
-#### 依序取得數字使用 promise
-```javascript
-let number = 5;
-get2(number)
-  .then((result)=>{
-    return get5(result)
-  })
-  .then((result)=>{
-    return get7(result)
-  })
-  .then((result)=>{
+  .then((result) => {
     console.log(result)
   })
 ```
 
 ---
 
-#### 小測驗
-#### 改寫 get2, get5, get7 用 promise 實作
+#### 實作情境 3.
+#### 想要讓兩個 request 平行執行，完成後返回
+```javascript
+Promise
+  .all([addressPromise, placePromise])
+  .then((result) => {
+    console.log(result)
+  })
+```
