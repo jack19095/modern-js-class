@@ -1,6 +1,11 @@
 ## 使用 Expresss Web 框架
 #### [Expresss](http://expressjs.com/) 是 Nodejs 裡面最知名的 Web 框架
 
+```bash
+$ npm init
+$ npm install express --save
+```
+
 ```javascript
 const express = require('express')
 const app = express()
@@ -18,7 +23,7 @@ app.listen(3000, function () {
 $ node main.js
 ```
 ```
-啟動後開啟瀏覽器，拜訪 http://localhost:3030
+啟動後開啟瀏覽器，拜訪 http://localhost:3000
 ```
 
 ---
