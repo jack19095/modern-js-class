@@ -41,6 +41,11 @@ app.post('/hi', function (req, res) {
 
 ---
 
+#### [url的參數](https://nodejs.org/docs/latest/api/url.html#url_url_strings_and_url_objects)
+
+
+---
+
 ### 使用 postman 與自己的 server 互動
 
 * [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=zh-TW)
@@ -66,11 +71,6 @@ request({
     console.log(body)
 })
 ```
-
----
-
-#### [url的參數](https://nodejs.org/docs/latest/api/url.html#url_url_strings_and_url_objects)
-
 
 ---
 
