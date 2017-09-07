@@ -41,6 +41,12 @@ app.post('/hi', function (req, res) {
 
 ---
 
+### 使用 postman 與自己的 server 互動
+
+* [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=zh-TW)
+
+---
+
 #### 使用 request 與自己的 Server 互動
 
 ```javascript
