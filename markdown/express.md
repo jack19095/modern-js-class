@@ -87,7 +87,7 @@ app.post('/hi', function (req, res) {
 ```javascript
 request({
   url: 'http://localhost:3000/hi',
-  method: 'POST'
+  method: 'POST',
   qs: { address: 'Taipei' },
 }, 
   function (error, response, body){
