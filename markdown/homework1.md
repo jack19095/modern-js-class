@@ -8,7 +8,7 @@
 
 ### 需求2.
 
-實作 `/homework` 的 routing，並回傳一個 json object，內容包含你的姓名，及 email，格式如下。
+實作 `/homework` 的 routing，並回傳一個 json object，內容包含你的姓名，及 email，格式參考如下。
 ```javascript
 {
   "name": "郭冠宏",
@@ -17,6 +17,7 @@
 ```
 作業繳交會依照上述的姓名與信箱去做核對，請務必檢查是否正確。
 
+### 完成作業參考
 ![homework](../img/homework.png)
 
 ### 參考連結
