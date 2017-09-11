@@ -4,12 +4,11 @@
 
 ### 需求1.
 
-將應用程式部署在 heroku 上面，並取得 heroku 的網址，格式如 `https://yourappname.herokuapp.com`。
-
+將應用程式部署在 heroku 上面，並取得 heroku 的網址，格式如 `https://yourappname.herokuapp.com`，應用程式名稱（app name）自訂。
 
 ### 需求2.
 
-在部署後的網址上面必須要實作 `/homework` 的 rounting，並回傳一個 json object，內容包含你的姓名，及 email，格式如下。
+實作 `/homework` 的 routing，並回傳一個 json object，內容包含你的姓名，及 email，格式如下。
 ```javascript
 {
   "name": "郭冠宏",
