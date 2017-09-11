@@ -18,7 +18,7 @@
 ```
 作業繳交會依照上述的姓名與信箱去做核對，請務必檢查是否正確。
 
-![homework](img/homework.png)
+![homework](../img/homework.png)
 
 ### 參考連結
 * https://github.com/ntu-csie-train/express-heroku
