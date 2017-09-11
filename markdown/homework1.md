@@ -4,7 +4,7 @@
 
 ### 需求1.
 
-將應用程式部署在 heroku 上面。並將部署後的網址回傳給我。
+將應用程式部署在 heroku 上面，並取得 heroku 的網址，格式如 `https://yourappname.herokuapp.com`。
 
 
 ### 需求2.
