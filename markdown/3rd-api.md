@@ -7,3 +7,4 @@
 ### Facebook
  * [using-graph-api](https://developers.facebook.com/docs/graph-api/using-graph-api/)
  * [places-search](https://developers.facebook.com/docs/places/web/search/)
+ * [graph api explorer](https://developers.facebook.com/tools/explorer/)
