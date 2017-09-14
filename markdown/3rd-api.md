@@ -1,6 +1,7 @@
 ## 使用第三方 API
 ### Google
  * [geocoding-api](https://developers.google.com/maps/documentation/geocoding/intro)
+ * [web-services](https://developers.google.com/maps/web-services/)
  * [places-api](https://developers.google.com/places)
 ### Facebook
  * [using-graph-api](https://developers.facebook.com/docs/graph-api/using-graph-api/)
