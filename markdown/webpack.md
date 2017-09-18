@@ -6,12 +6,14 @@ Babeljs 是一個 Javascsript 的編譯器，可以解決相容性的問題，�
 
 因為使用 React 會需要撰寫 .jsx 的檔案，所以需要 babel 來幫助我們做前置的編譯
 
-``
+---
+
+```
 npm install --save-dev babel-loader babel-core babel-preset-env webpack
-``
-``
+```
+```
 npm install --save-dev babel-cli babel-preset-react
-``
+```
 ---
 
 #### 設定 webpack.config.js 檔案
