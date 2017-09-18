@@ -14,7 +14,9 @@ npm install --save-dev babel-loader babel-core babel-preset-env webpack
 ```
 npm install --save-dev babel-cli babel-preset-react
 ```
+
 ---
+
 
 #### 設定 webpack.config.js 檔案
 
