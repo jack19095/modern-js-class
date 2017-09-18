@@ -8,7 +8,7 @@
 $ npm install react, react-dom --save
 ```
 ```
-$ npm install babel-preset-react
+$ npm install babel-preset-react --save
 ```
 
 ---
