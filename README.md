@@ -3,7 +3,7 @@
  * 投影片連結：[https://ntu-csie-train.github.io/modern-js-class/](https://ntu-csie-train.github.io/modern-js-class/)
  * 投影片縮網址：[http://bit.ly/csie-train-js](http://bit.ly/csie-train-js)
  * 課堂範例連結1：[examples](/examples)
- * 課堂範例連結2 [express-heroku](https://github.com/godgunman/express-heroku)
+ * 課堂範例連結2：[express-heroku](https://github.com/godgunman/express-heroku)
 
 ## 課程資訊
 
