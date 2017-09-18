@@ -4,6 +4,12 @@
 
 * 不再透過直接查找 DOM 的方式來做動態修改
 
+```
+$ npm install react, react-dom --save
+```
+```
+$ npm install babel-preset-react
+```
 
 ---
 
