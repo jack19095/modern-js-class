@@ -51,3 +51,6 @@
 
 ## 關於此課程網
 投影片是由 [reveal.js](https://github.com/hakimel/reveal.js/) 架設的。主要內容可以在 [index.html](./index.html) 與 [markdown 資料夾](./markdown) 裡面看到。 
+
+## 其他
+ * [semantic-ui](https://semantic-ui.com/)
