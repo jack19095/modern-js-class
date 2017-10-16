@@ -69,20 +69,37 @@ if (score >= 70 && score<=80) {
 ---
 
 ### 那如果要給級距怎辦？
-### 也可以不用很多層 if 
+### 使用 else if
 
 ```javascript
 // 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
 let score = 60;
 if (score >= 90) {
   console.log('A');
-} 
-if (score >= 80 && score<90) {
+} else if (score >= 80) {
   console.log('B');
-}
-if (score >= 70 && score<80) {
+} else if (score >= 70) {
   console.log('C');
 }
 // 以此類推
 ```
+
+---
+
+### 使用 else if
+### 另外一個例子
+
+```javascript
+// 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
+let item = 'A';
+if (item === 'A') {
+  console.log('薯條 + 冰紅茶');
+} else if (item === 'B') {
+  console.log('沙拉 + 冰紅茶');
+} else if (item === 'C') {
+  console.log('雞塊 + 冰紅茶');
+}
+// 以此類推
+```
+
 
