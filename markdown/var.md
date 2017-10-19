@@ -15,10 +15,10 @@ let cup3 = null
 #### `==` 或 `===` 符號，才是等於的意思（以後會看到）
 
 ```javascript
-let var1 = 'water' // 字串
-let var2 = 101     // 數字
-let var3 = null      // 空
-let var4 = [1, 2, 3] //陣列
+let var1 = 'water'    // 字串
+let var2 = 101        // 數字
+let var3 = null       // 空
+let var4 = [1, 2, 3]  //陣列
 let var5 = { name: 'Tom' } //物件
 ```
 
