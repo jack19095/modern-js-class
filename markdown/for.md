@@ -9,7 +9,7 @@ for (/* 初始化指令 */;/* 判斷式 */;/* 程式碼區塊結束後指令 */)
 ```
 
 ```javascript
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < 9; i = i + 1) {
    console.log(i);
    // more statements
 }
