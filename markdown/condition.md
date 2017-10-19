@@ -87,10 +87,9 @@ if (score >= 90) {
 ---
 
 ### 使用 else if
-### 另外一個例子
+### 另外一個套餐的例子
 
 ```javascript
-// 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
 let item = 'A';
 if (item === 'A') {
   console.log('薯條 + 冰紅茶');
@@ -99,7 +98,6 @@ if (item === 'A') {
 } else if (item === 'C') {
   console.log('雞塊 + 冰紅茶');
 }
-// 以此類推
 ```
 
 

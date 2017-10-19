@@ -1,14 +1,15 @@
 ## 陣列
 #### 可以想像成是一個列表，裡面有很多個變數
-#### 裡頭裝的變數也可以是不同型別的
-#### 陣列從零開始
+#### 裡頭裝的元素也可以是不同型別，索引從零開始
 
 ```javascript
-let scores = [50, 80, 40];
-console.log(scores);    // 把整個陣列印出來
+let scores = [50, 80, 40]; // 陣列的初始化
+console.log(scores);       // 把整個陣列印出來
 
-let score0 = scores[0]; // 對 0 個取值
+let score0 = scores[0];    // 把第 0 項取出來
+
 console.log(score0);
+console.log(scores[0]);
 ```
 
 ---
@@ -22,16 +23,15 @@ let score1 = 80;
 let score2 = 40;
 let scores = [score0, score1, score2];
 
-console.log(scores);    // 把整個陣列印出來
-console.log(scores[0]);  // 只印出第 0 個
+console.log(scores);      // 把整個陣列印出來
+console.log(scores[0]);   // 只印出第 0 個
 
 ```
 
 ---
 
-
 #### Array 有一些屬性，與方法（method）可以呼叫
-#### .length / .push
+**.length / .push()**
 
 ```javascript
 let sports = ['soccer', 'baseball'];
@@ -46,7 +46,7 @@ console.log(total);  // 4
 ---
 
 
-#### .slice
+**.slice()**
 
 ```javascript
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
@@ -60,7 +60,7 @@ console.log(sliced);  // ['baseball', 'football']
 ---
 
 
-#### .shift / .pop
+**.shift()** / **.pop()**
 
 ```javascript
 let sports = ['soccer', 'baseball', 'football', 'swimming'];
