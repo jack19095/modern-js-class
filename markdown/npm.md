@@ -83,3 +83,9 @@ request(url, function (error, response, body) {
   console.log(result)
 })
 ```
+
+---
+
+#### 參考資訊
+
+* [URL Strings and URL Objects](https://nodejs.org/api/url.html#url_url_strings_and_url_objects)
