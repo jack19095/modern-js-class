@@ -73,12 +73,13 @@ request(url,
 #### 結合 getInfo()
 
 ```javascript
-const request = require('request');
-const { getInfo } = require('./ex-object')
+const request = require('request')
+const getInfo = require('./getInfo')
 
 let address = 'National Taiwan University'
 let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
 request(url, function (error, response, body) {
-  console.log(getInfo(body));
-});
+  let result = getInfo(JSON.parse(body)) 
+  console.log(result)
+})
 ```
