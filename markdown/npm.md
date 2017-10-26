@@ -7,11 +7,35 @@ $ npm init
 $ npm install request --save
 ```
 
- * `npm init` 會初始化專案資料夾，並產生 package.json
- * `npm install` 會安裝套件，並產生 node_modules 資料夾，及更新 package.json 檔案
-```bash
-$ ls 
-node_modules/
+---
+
+`npm init` 會初始化專案資料夾，並產生 package.json
+
+```javascript
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+```
+
+---
+
+`npm install request` 會安裝套件，並產生 node_modules 資料夾。`--save` 參數會更新 package.json 檔案
+
+```javascript
+{
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
 ```
 
 ---
