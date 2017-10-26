@@ -4,10 +4,11 @@
 
 ```bash
 $ npm init
-$ npm install request
+$ npm install request --save
 ```
- 
-#### 安裝完後執行目錄的資料夾，會多一個 node_modules 資料夾
+
+ * `npm init` 會初始化專案資料夾，並產生 package.json
+ * `npm install` 會安裝套件，並產生 node_modules 資料夾，及更新 package.json 檔案
 ```bash
 $ ls 
 node_modules/
