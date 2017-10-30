@@ -23,5 +23,5 @@ const searchRestaurant = async address => {
 
 let result = searchRestaurant("台灣大學")
 result.then((places) => {
-  console.log(result)
+  console.log(places)
 })
