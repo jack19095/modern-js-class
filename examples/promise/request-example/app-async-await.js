@@ -1,7 +1,7 @@
 const rp = require("request-promise")
 const getInfo = require("./getInfo")
 
-const main = async address => {
+const searchRestaurant = async address => {
   address = encodeURI(address)
   let addressUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`
 
@@ -18,7 +18,10 @@ const main = async address => {
       rating: element.rating
     }
   })
-  console.log(places)
+  return places
 }
 
-main("台灣大學")
+let result = searchRestaurant("台灣大學")
+result.then((places) => {
+  console.log(result)
+})
