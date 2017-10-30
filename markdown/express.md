@@ -7,6 +7,7 @@ $ npm install express --save
 ```
 
 ```javascript
+// index.js
 const express = require('express')
 const app = express()
 
@@ -20,7 +21,7 @@ app.listen(3000, function () {
 ```
 
 ```bash
-$ node main.js
+$ node index.js
 ```
 ```
 啟動後開啟瀏覽器，拜訪 http://localhost:3000
