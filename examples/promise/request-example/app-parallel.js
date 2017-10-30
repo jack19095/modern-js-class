@@ -23,13 +23,27 @@ const searchRestaurant = async address => {
   return places
 }
 
+const main = async (addressList) => {
+  let tasks = []
+  let places = []
+  for (let address of addressList) {
+    tasks.push(searchRestaurant(address))
+  }
+  let results = await Promise.all(tasks)
+  for (let result of results) {
+    places = places.concat(result)
+  }
+  return places
+}
+
 let addressList = [
-  '台灣大學', '國父紀念館', '台北101', '台北市政府'
+  '台灣大學', '國父紀念館', '台北101', '台北市政府',
+  '師範大學', '松山高中', '忠孝復興捷運站'
 ]
 
-for (let address of addressList) {
-  let result = searchRestaurant(address)
-  result.then((places) => {
-    console.log(address, places)
+let start = Date.now()
+
+main(addressList)
+  .then((places) => {
+    console.log(places, Date.now() - start)
   })
-}
