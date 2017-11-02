@@ -80,7 +80,7 @@ request({
 
 ```javascript
 app.post('/hi', function (req, res) {
-  res.send(`query=${req.query} body=${req.body}`)
+  res.send(`query=${req.query}`)
 })
 ```
 

@@ -12,7 +12,8 @@ app.get('/hello', function (req, res) {
 // http://localhost:3000/hello?address=Taipei&type=food
 
 app.post('/hi', function (req, res) {
-  res.send('hi routing')
+  let query = req.query  
+  res.send(`hi routing, query = ${JSON.stringify(query)}`)
 })
 
 app.listen(3000, function () {

@@ -17,8 +17,12 @@ request({
 
 request({
   url: 'http://localhost:3000/hi',
-  method: 'POST'
+  method: 'POST',
+  qs: {
+    address: 'Taipei',
+    type: 'food'
+  }
 }, 
   function (error, response, body){
-    console.log(body)
+    console.log('3:', body)
 })
