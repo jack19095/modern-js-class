@@ -10,9 +10,11 @@ request({
   qs: {
     address: 'Taipei',
     type: 'food'
-  }
+  },
+  json: true,
 }, function (error, response, body){
-    console.log('2:', body)
+    console.log('2:', body.welcomeMessage)
+    console.log('2:', body.query)    
 })
 
 request({
@@ -21,7 +23,8 @@ request({
   qs: {
     address: 'Taipei',
     type: 'food'
-  }
+  },
+  json: true,
 }, 
   function (error, response, body){
     console.log('3:', body)

@@ -15,14 +15,21 @@ app.get('/', function (req, res) {
 
 app.get('/hello', function (req, res) {
   let query = req.query
-  res.send(`hello routing, query = ${JSON.stringify(query)}`)
+  res.json({
+    welcomeMessage: 'hello routing',
+    query: query,
+  })
 })
 // http://localhost:3000/hello?address=Taipei&type=food
 
 app.post('/hi', function (req, res) {
   let query = req.query
   let body = req.body
-  res.send(`hi routing, query = ${JSON.stringify(query)}, body = ${JSON.stringify(body)}`)
+  res.json({
+    welcomeMessage: 'hi routing',
+    query: query,
+    body: body
+  })
 })
 
 app.listen(3000, function () {
