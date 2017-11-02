@@ -26,3 +26,16 @@ request({
   function (error, response, body){
     console.log('3:', body)
 })
+
+request({
+  url: 'http://localhost:3000/hi',
+  method: 'POST',
+  body: {
+    username: 'ggm',
+    email: 'teacher@ggm.tw'
+  },
+  json: true,
+}, 
+  function (error, response, body){
+    console.log('4:', body)
+})
