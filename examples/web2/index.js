@@ -6,8 +6,10 @@ app.get('/', function (req, res) {
 })
 
 app.get('/hello', function (req, res) {
-  res.send('hello routing')
+  let query = req.query
+  res.send(`hello routing, query = ${JSON.stringify(query)}`)
 })
+// http://localhost:3000/hello?address=Taipei&type=food
 
 app.post('/hi', function (req, res) {
   res.send('hi routing')
