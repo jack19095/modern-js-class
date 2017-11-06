@@ -53,8 +53,14 @@ client.jsx 是整個前端程式碼的進入點，並會使用到其他的套件
 webpack --config webpack.config.js
 ```
 
-```
+```bash
+# Linux/Mac
 node ./node_modules/webpack/bin/webpack.js --config webpack.config.js
+```
+
+```bash
+# Windows
+node .\node_modules\webpack\bin\webpack.js --config webpack.config.js
 ```
 
 ---
