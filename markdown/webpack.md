@@ -60,23 +60,6 @@ client.jsx 是整個前端程式碼的進入點，並會使用到其他的套件
 
 ---
 
-#### 執行 webpack
-```
-webpack --config webpack.config.js
-```
-
-```bash
-# Linux/Mac
-node ./node_modules/webpack/bin/webpack.js --config webpack.config.js
-```
-
-```bash
-# Windows
-node .\node_modules\webpack\bin\webpack.js --config webpack.config.js
-```
-
----
-
 #### 實作 client.jsx
 
 ```
@@ -91,10 +74,29 @@ const getApiUrl = () => {
 }
 
 const getHistory = async () => {
-  let url = getApiUrl() + '/history/';
+  let url = getApiUrl() + '/api/history/';
   let result = await axios.get(url);
   console.log(result)
 }
 
 getHistory();
+```
+
+---
+
+#### 執行 webpack
+
+```bash
+# Linux/Mac
+node ./node_modules/webpack/bin/webpack.js
+```
+
+```bash
+# Windows
+node .\node_modules\webpack\bin\webpack.js
+```
+
+```bash
+# 如果是透過 npm install -g webpack
+webpack
 ```
