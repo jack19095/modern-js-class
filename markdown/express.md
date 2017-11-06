@@ -122,6 +122,6 @@ app.use('/static', express.static('static'))
 
 // or
 
-app.use('/static', express.static(path.resolve(__dirname, '/static')))
+app.use('/static', express.static(path.resolve(__dirname, 'static')))
 
 ```
