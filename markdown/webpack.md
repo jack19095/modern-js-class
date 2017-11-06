@@ -48,6 +48,18 @@ client.jsx 是整個前端程式碼的進入點，並會使用到其他的套件
 
 ---
 
+#### 設定 .babelrc 檔案
+
+```javascript
+{
+    "presets": [
+        "react", "env"
+    ]
+}
+```
+
+---
+
 #### 執行 webpack
 ```
 webpack --config webpack.config.js
