@@ -115,3 +115,13 @@ app.use(bodyParser.json())
 
 ---
 
+### [使用靜態檔案](http://expressjs.com/en/starter/static-files.html)
+
+```javascript
+app.use('/static', express.static('static'))
+
+// or
+
+app.use('/static', express.static(path.resolve(__dirname, '/static')))
+
+```
