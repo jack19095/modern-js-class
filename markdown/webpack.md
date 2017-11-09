@@ -22,7 +22,7 @@ npm install --save-dev babel-cli babel-preset-react
 
 ```javascript
 module.exports = {
-  entry: './client.jsx',
+  entry: ['babel-polyfill', './client.jsx'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'static/build')
