@@ -1,7 +1,7 @@
 ## Database
 ### 在 Nodejs 使用 mongodb
 
- * 使用 mongo 的服務 [mongoLab](https://elements.heroku.com/addons/mongolab)
+ * 使用 mongo 的服務 [mLab-heroku](https://elements.heroku.com/addons/mongolab) [mLab](https://mlab.com/)
  * 查看文件 [mongodb](https://mongodb.github.io/node-mongodb-native/)
  * 安裝 mongodb 套件
 ```bash
