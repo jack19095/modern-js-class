@@ -50,6 +50,7 @@ if (score >= 60) {
 
 ### 那如果要給級距怎辦？
 ### 也可以不用很多層 if 
+### 使用 and (&&) 來判斷
 
 ```javascript
 // 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
@@ -64,6 +65,20 @@ if (score >= 70 && score<=80) {
   console.log('C');
 }
 // 以此類推
+```
+
+---
+
+### 使用 or (||) 來判斷
+
+```javascript
+// 如果兩個分數其中一個有達到 90 分的話，就得到獎品
+let score1 = 60;
+let score2 = 90;
+
+if (score1 >= 90 || score2 >= 90) {
+  console.log('ya')
+}
 ```
 
 ---
