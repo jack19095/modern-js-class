@@ -88,16 +88,16 @@ if (score1 >= 90 || score2 >= 90) {
 
 ```javascript
 // 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
-let level = 'A';
-if (level === 'A') {
+let grade = 'A';
+if (grade === 'A') {
   console.log('90 ~ 100');
-} else if (level === 'B') {
+} else if (grade === 'B') {
   console.log('80 ~ 90');
-} else if (level === 'C') {
+} else if (grade === 'C') {
   console.log('70 ~ 79');
-} else if (level === 'D') {
+} else if (grade === 'D') {
   console.log('60 ~ 69');
-} else if (level === 'X') {
+} else if (grade === 'X') {
   console.log('< 60');
 }
 // 以此類推
