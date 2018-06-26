@@ -68,18 +68,22 @@ if (score >= 70 && score<=80) {
 
 ---
 
-### 那如果要給級距怎辦？
 ### 使用 else if
+### 那如果給定級距的字母，反過來印出區間怎做？
 
 ```javascript
 // 90~100 -> A, 80~89 -> B , 70~79 -> C, 60~69 -> D, X
-let score = 60;
-if (score >= 90) {
-  console.log('A');
-} else if (score >= 80) {
-  console.log('B');
-} else if (score >= 70) {
-  console.log('C');
+let level = 'A';
+if (level === 'A') {
+  console.log('90 ~ 100');
+} else if (level === 'B') {
+  console.log('80 ~ 90');
+} else if (level === 'C') {
+  console.log('70 ~ 79');
+} else if (level === 'D') {
+  console.log('60 ~ 69');
+} else if (level === 'X') {
+  console.log('< 60');
 }
 // 以此類推
 ```
