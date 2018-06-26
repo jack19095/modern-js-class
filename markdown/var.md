@@ -3,9 +3,9 @@
 #### 在 JS 中沒有型別問題，變數可以裝任何東西
 
 ```javascript
-let cup1 = 'water'
-let cup2 = 101
-let cup3 = null
+let cup1 = 'water'    // 字串
+let cup2 = 101        // 數字
+let cup3 = null       // 空
 ```
 
 ---
@@ -15,11 +15,11 @@ let cup3 = null
 #### `==` 或 `===` 符號，才是等於的意思（以後會看到）
 
 ```javascript
-let var1 = 'water'    // 字串
-let var2 = 101        // 數字
-let var3 = null       // 空
-let var4 = [1, 2, 3]  //陣列
-let var5 = { name: 'Tom' } //物件
+let cup1 = 'water'    // 字串
+let cup2 = 101        // 數字
+let cup3 = null       // 空
+let cup4 = [1, 2, 3]       // 陣列
+let cup5 = { name: 'Tom' } // 物件
 ```
 
 ---
